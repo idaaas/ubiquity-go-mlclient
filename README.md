@@ -1,2 +1,2 @@
 # ubiquity-go-mlclient
-go wrapper for IdAaas ml driver
+go wrapper for Ubiquity mlclient
