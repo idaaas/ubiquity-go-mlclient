@@ -44,14 +44,16 @@ typedef long long swig_type_12;
 typedef _gostring_ swig_type_13;
 typedef long long swig_type_14;
 typedef _gostring_ swig_type_15;
-typedef _gostring_ swig_type_16;
+typedef long long swig_type_16;
 typedef _gostring_ swig_type_17;
 typedef _gostring_ swig_type_18;
 typedef _gostring_ swig_type_19;
 typedef _gostring_ swig_type_20;
 typedef _gostring_ swig_type_21;
-typedef long long swig_type_22;
+typedef _gostring_ swig_type_22;
 typedef _gostring_ swig_type_23;
+typedef long long swig_type_24;
+typedef _gostring_ swig_type_25;
 extern void _wrap_Swig_free_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern uintptr_t _wrap_Swig_malloc_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
 extern uintptr_t _wrap_new_ClientHandle_Ubiquity_efad76b24322b4d4(void);
@@ -75,17 +77,18 @@ extern void _wrap_ClientHandle_startBidShading_Ubiquity_efad76b24322b4d4(uintptr
 extern void _wrap_ClientHandle_startLineItem_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_9 arg2, swig_type_10 arg3, float arg4);
 extern void _wrap_ClientHandle_startProbability_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_11 arg2, swig_type_12 arg3);
 extern swig_intgo _wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_13 arg2, swig_type_14 arg3, swig_intgo arg4);
+extern swig_intgo _wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_15 arg2, swig_type_16 arg3);
 extern uintptr_t _wrap_getClientHandle__SWIG_0_Ubiquity_efad76b24322b4d4(void);
 extern void _wrap_delete_ClientHandle_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
-extern swig_type_15 _wrap_getStatusString_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
-extern void _wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(swig_type_16 arg1);
-extern void _wrap_setCredential_Ubiquity_efad76b24322b4d4(swig_type_17 arg1);
-extern void _wrap_setApiAddress_Ubiquity_efad76b24322b4d4(swig_type_18 arg1);
-extern void _wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(swig_type_19 arg1, swig_type_20 arg2);
+extern swig_type_17 _wrap_getStatusString_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
+extern void _wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(swig_type_18 arg1);
+extern void _wrap_setCredential_Ubiquity_efad76b24322b4d4(swig_type_19 arg1);
+extern void _wrap_setApiAddress_Ubiquity_efad76b24322b4d4(swig_type_20 arg1);
+extern void _wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(swig_type_21 arg1, swig_type_22 arg2);
 extern uintptr_t _wrap_getClientHandle__SWIG_1_Ubiquity_efad76b24322b4d4(void);
-extern swig_intgo _wrap_openClient_Ubiquity_efad76b24322b4d4(swig_type_21 arg1);
+extern swig_intgo _wrap_openClient_Ubiquity_efad76b24322b4d4(swig_type_23 arg1);
 extern void _wrap_closeClient_Ubiquity_efad76b24322b4d4(void);
-extern swig_type_22 _wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(swig_type_23 arg1);
+extern swig_type_24 _wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(swig_type_25 arg1);
 #undef intgo
 */
 import "C"
@@ -314,6 +317,18 @@ func (arg1 SwigcptrClientHandle) Train(arg2 string, arg3 int64, arg4 int) (_swig
 	return swig_r
 }
 
+func (arg1 SwigcptrClientHandle) Cancel(arg2 string, arg3 int64) (_swig_ret int) {
+	var swig_r int
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	_swig_i_2 := arg3
+	swig_r = (int)(C._wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_1)), C.swig_type_16(_swig_i_2)))
+	if Swig_escape_always_false {
+		Swig_escape_val = arg2
+	}
+	return swig_r
+}
+
 func GetClientHandle__SWIG_0() (_swig_ret ClientHandle) {
 	var swig_r ClientHandle
 	swig_r = (ClientHandle)(SwigcptrClientHandle(C._wrap_getClientHandle__SWIG_0_Ubiquity_efad76b24322b4d4()))
@@ -348,6 +363,7 @@ type ClientHandle interface {
 	StartLineItem(arg2 string, arg3 int64, arg4 float32)
 	StartProbability(arg2 string, arg3 int64)
 	Train(arg2 string, arg3 int64, arg4 int) (_swig_ret int)
+	Cancel(arg2 string, arg3 int64) (_swig_ret int)
 }
 
 func GetStatusString(arg1 int) (_swig_ret string) {
@@ -362,7 +378,7 @@ func GetStatusString(arg1 int) (_swig_ret string) {
 
 func SetAeronDirectory(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(*(*C.swig_type_16)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(*(*C.swig_type_18)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -370,7 +386,7 @@ func SetAeronDirectory(arg1 string) {
 
 func SetCredential(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setCredential_Ubiquity_efad76b24322b4d4(*(*C.swig_type_17)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setCredential_Ubiquity_efad76b24322b4d4(*(*C.swig_type_19)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -378,7 +394,7 @@ func SetCredential(arg1 string) {
 
 func SetApiAddress(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setApiAddress_Ubiquity_efad76b24322b4d4(*(*C.swig_type_18)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setApiAddress_Ubiquity_efad76b24322b4d4(*(*C.swig_type_20)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -387,7 +403,7 @@ func SetApiAddress(arg1 string) {
 func SetResourceStringInCache(arg1 string, arg2 string) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(*(*C.swig_type_19)(unsafe.Pointer(&_swig_i_0)), *(*C.swig_type_20)(unsafe.Pointer(&_swig_i_1)))
+	C._wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(*(*C.swig_type_21)(unsafe.Pointer(&_swig_i_0)), *(*C.swig_type_22)(unsafe.Pointer(&_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -416,7 +432,7 @@ func GetClientHandle(a ...interface{}) ClientHandle {
 func OpenClient(arg1 string) (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
-	swig_r = (int)(C._wrap_openClient_Ubiquity_efad76b24322b4d4(*(*C.swig_type_21)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (int)(C._wrap_openClient_Ubiquity_efad76b24322b4d4(*(*C.swig_type_23)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -430,7 +446,7 @@ func CloseClient() {
 func Xxh3_64bits(arg1 string) (_swig_ret int64) {
 	var swig_r int64
 	_swig_i_0 := arg1
-	swig_r = (int64)(C._wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(*(*C.swig_type_23)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (int64)(C._wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(*(*C.swig_type_25)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
