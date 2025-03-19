@@ -46,14 +46,17 @@ typedef long long swig_type_14;
 typedef _gostring_ swig_type_15;
 typedef long long swig_type_16;
 typedef _gostring_ swig_type_17;
-typedef _gostring_ swig_type_18;
+typedef long long swig_type_18;
 typedef _gostring_ swig_type_19;
 typedef _gostring_ swig_type_20;
 typedef _gostring_ swig_type_21;
 typedef _gostring_ swig_type_22;
 typedef _gostring_ swig_type_23;
-typedef long long swig_type_24;
+typedef _gostring_ swig_type_24;
 typedef _gostring_ swig_type_25;
+typedef _gostring_ swig_type_26;
+typedef long long swig_type_27;
+typedef _gostring_ swig_type_28;
 extern void _wrap_Swig_free_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern uintptr_t _wrap_Swig_malloc_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
 extern uintptr_t _wrap_new_ClientHandle_Ubiquity_efad76b24322b4d4(void);
@@ -66,6 +69,7 @@ extern swig_type_4 _wrap_ClientHandle_getStatusString_Ubiquity_efad76b24322b4d4(
 extern float _wrap_ClientHandle_getPrice_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern swig_intgo _wrap_ClientHandle_getPredictionType_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern float _wrap_ClientHandle_getProbability_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
+extern char _wrap_ClientHandle_getBidStatus_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern swig_intgo _wrap_ClientHandle_poll_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern swig_intgo _wrap_ClientHandle_predict_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern void _wrap_ClientHandle_putBoolean_Ubiquity_efad76b24322b4d4(uintptr_t arg1, char arg2);
@@ -75,20 +79,22 @@ extern void _wrap_ClientHandle_putNominal_Ubiquity_efad76b24322b4d4(uintptr_t ar
 extern void _wrap_ClientHandle_putNumeric_Ubiquity_efad76b24322b4d4(uintptr_t arg1, float arg2);
 extern void _wrap_ClientHandle_startBidShading_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_7 arg2, swig_type_8 arg3, float arg4, float arg5);
 extern void _wrap_ClientHandle_startLineItem_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_9 arg2, swig_type_10 arg3, float arg4);
-extern void _wrap_ClientHandle_startProbability_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_11 arg2, swig_type_12 arg3);
-extern swig_intgo _wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_13 arg2, swig_type_14 arg3, swig_intgo arg4);
-extern swig_intgo _wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_15 arg2, swig_type_16 arg3);
+extern void _wrap_ClientHandle_startActionRate_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_11 arg2, swig_type_12 arg3, float arg4);
+extern void _wrap_ClientHandle_startProbability_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_13 arg2, swig_type_14 arg3);
+extern swig_intgo _wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_15 arg2, swig_type_16 arg3, swig_intgo arg4);
+extern swig_intgo _wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_17 arg2, swig_type_18 arg3);
+extern swig_type_19 _wrap_ClientHandle_getDiagnosticString_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern uintptr_t _wrap_getClientHandle__SWIG_0_Ubiquity_efad76b24322b4d4(void);
 extern void _wrap_delete_ClientHandle_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
-extern swig_type_17 _wrap_getStatusString_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
-extern void _wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(swig_type_18 arg1);
-extern void _wrap_setCredential_Ubiquity_efad76b24322b4d4(swig_type_19 arg1);
-extern void _wrap_setApiAddress_Ubiquity_efad76b24322b4d4(swig_type_20 arg1);
-extern void _wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(swig_type_21 arg1, swig_type_22 arg2);
+extern swig_type_20 _wrap_getStatusString_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
+extern void _wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(swig_type_21 arg1);
+extern void _wrap_setCredential_Ubiquity_efad76b24322b4d4(swig_type_22 arg1);
+extern void _wrap_setApiAddress_Ubiquity_efad76b24322b4d4(swig_type_23 arg1);
+extern void _wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(swig_type_24 arg1, swig_type_25 arg2);
 extern uintptr_t _wrap_getClientHandle__SWIG_1_Ubiquity_efad76b24322b4d4(void);
-extern swig_intgo _wrap_openClient_Ubiquity_efad76b24322b4d4(swig_type_23 arg1);
+extern swig_intgo _wrap_openClient_Ubiquity_efad76b24322b4d4(swig_type_26 arg1);
 extern void _wrap_closeClient_Ubiquity_efad76b24322b4d4(void);
-extern swig_type_24 _wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(swig_type_25 arg1);
+extern swig_type_27 _wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(swig_type_28 arg1);
 #undef intgo
 */
 import "C"
@@ -224,6 +230,13 @@ func (arg1 SwigcptrClientHandle) GetProbability() (_swig_ret float32) {
 	return swig_r
 }
 
+func (arg1 SwigcptrClientHandle) GetBidStatus() (_swig_ret int8) {
+	var swig_r int8
+	_swig_i_0 := arg1
+	swig_r = (int8)(C._wrap_ClientHandle_getBidStatus_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0)))
+	return swig_r
+}
+
 func (arg1 SwigcptrClientHandle) Poll() (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
@@ -294,11 +307,22 @@ func (arg1 SwigcptrClientHandle) StartLineItem(arg2 string, arg3 int64, arg4 flo
 	}
 }
 
+func (arg1 SwigcptrClientHandle) StartActionRate(arg2 string, arg3 int64, arg4 float32) {
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	_swig_i_2 := arg3
+	_swig_i_3 := arg4
+	C._wrap_ClientHandle_startActionRate_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_1)), C.swig_type_12(_swig_i_2), C.float(_swig_i_3))
+	if Swig_escape_always_false {
+		Swig_escape_val = arg2
+	}
+}
+
 func (arg1 SwigcptrClientHandle) StartProbability(arg2 string, arg3 int64) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	C._wrap_ClientHandle_startProbability_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_1)), C.swig_type_12(_swig_i_2))
+	C._wrap_ClientHandle_startProbability_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_1)), C.swig_type_14(_swig_i_2))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -310,7 +334,7 @@ func (arg1 SwigcptrClientHandle) Train(arg2 string, arg3 int64, arg4 int) (_swig
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
 	_swig_i_3 := arg4
-	swig_r = (int)(C._wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_1)), C.swig_type_14(_swig_i_2), C.swig_intgo(_swig_i_3)))
+	swig_r = (int)(C._wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_1)), C.swig_type_16(_swig_i_2), C.swig_intgo(_swig_i_3)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -322,11 +346,21 @@ func (arg1 SwigcptrClientHandle) Cancel(arg2 string, arg3 int64) (_swig_ret int)
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	swig_r = (int)(C._wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_1)), C.swig_type_16(_swig_i_2)))
+	swig_r = (int)(C._wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_17)(unsafe.Pointer(&_swig_i_1)), C.swig_type_18(_swig_i_2)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
 	return swig_r
+}
+
+func (arg1 SwigcptrClientHandle) GetDiagnosticString() (_swig_ret string) {
+	var swig_r string
+	_swig_i_0 := arg1
+	swig_r_p := C._wrap_ClientHandle_getDiagnosticString_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0))
+	swig_r = *(*string)(unsafe.Pointer(&swig_r_p))
+	var swig_r_1 string
+ swig_r_1 = swigCopyString(swig_r) 
+	return swig_r_1
 }
 
 func GetClientHandle__SWIG_0() (_swig_ret ClientHandle) {
@@ -352,6 +386,7 @@ type ClientHandle interface {
 	GetPrice() (_swig_ret float32)
 	GetPredictionType() (_swig_ret int)
 	GetProbability() (_swig_ret float32)
+	GetBidStatus() (_swig_ret int8)
 	Poll() (_swig_ret int)
 	Predict() (_swig_ret int)
 	PutBoolean(arg2 int8)
@@ -361,9 +396,11 @@ type ClientHandle interface {
 	PutNumeric(arg2 float32)
 	StartBidShading(arg2 string, arg3 int64, arg4 float32, arg5 float32)
 	StartLineItem(arg2 string, arg3 int64, arg4 float32)
+	StartActionRate(arg2 string, arg3 int64, arg4 float32)
 	StartProbability(arg2 string, arg3 int64)
 	Train(arg2 string, arg3 int64, arg4 int) (_swig_ret int)
 	Cancel(arg2 string, arg3 int64) (_swig_ret int)
+	GetDiagnosticString() (_swig_ret string)
 }
 
 func GetStatusString(arg1 int) (_swig_ret string) {
@@ -378,7 +415,7 @@ func GetStatusString(arg1 int) (_swig_ret string) {
 
 func SetAeronDirectory(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(*(*C.swig_type_18)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(*(*C.swig_type_21)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -386,7 +423,7 @@ func SetAeronDirectory(arg1 string) {
 
 func SetCredential(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setCredential_Ubiquity_efad76b24322b4d4(*(*C.swig_type_19)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setCredential_Ubiquity_efad76b24322b4d4(*(*C.swig_type_22)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -394,7 +431,7 @@ func SetCredential(arg1 string) {
 
 func SetApiAddress(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setApiAddress_Ubiquity_efad76b24322b4d4(*(*C.swig_type_20)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setApiAddress_Ubiquity_efad76b24322b4d4(*(*C.swig_type_23)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -403,7 +440,7 @@ func SetApiAddress(arg1 string) {
 func SetResourceStringInCache(arg1 string, arg2 string) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(*(*C.swig_type_21)(unsafe.Pointer(&_swig_i_0)), *(*C.swig_type_22)(unsafe.Pointer(&_swig_i_1)))
+	C._wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(*(*C.swig_type_24)(unsafe.Pointer(&_swig_i_0)), *(*C.swig_type_25)(unsafe.Pointer(&_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -432,7 +469,7 @@ func GetClientHandle(a ...interface{}) ClientHandle {
 func OpenClient(arg1 string) (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
-	swig_r = (int)(C._wrap_openClient_Ubiquity_efad76b24322b4d4(*(*C.swig_type_23)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (int)(C._wrap_openClient_Ubiquity_efad76b24322b4d4(*(*C.swig_type_26)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -446,7 +483,7 @@ func CloseClient() {
 func Xxh3_64bits(arg1 string) (_swig_ret int64) {
 	var swig_r int64
 	_swig_i_0 := arg1
-	swig_r = (int64)(C._wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(*(*C.swig_type_25)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (int64)(C._wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(*(*C.swig_type_28)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -468,26 +505,30 @@ const NO_DATA int = 2
 const BACK_PRESSURED int = 3
 const NO_COMPATIBLE_NODE int = 4
 
-const ARCHITECTURE_NOT_SUPPORTED int = 0x20001
-const AERON_INITIALIZATION_FAILED int = 0x20002
-const INVALID_RESOURCE_ID int = 0x20003
-const INVALID_APP_FOR_MODEL int = 0x20004
-const MISMATCHED_FEATURE_TYPE int = 0x20005
-const INVALID_FEEDBACK_LEVEL int = 0x20006
-const MISSING_CREATIVES int = 0x20007
-const TOO_MANY_CREATIVES int = 0x20008
-const MISPLACED_CREATIVE_ID int = 0x20009
-const NO_API_RESPONSE int = 0x2000A
-const FORBIDDEN int = 0x2000B
-const UNKNOWN_RESOURCE int = 0x2000C
-const OTHER_FETCH_ERROR int = 0x2000D
-const INVALID_CLUSTER_DESCRIPTION int = 0x2000E
-const SCHEMA_UNAVAILABLE int = 0x2000F
-const INVALID_HANDLE int = 0x20010
-const UNAUTHORIZED int = 0x20011
-const INTERNAL_API_ERROR int = 0x20012
+const NO_BID int8 = 0
+const BID int8 = 1
+
+const ARCHITECTURE_NOT_SUPPORTED int = 0x05
+const AERON_INITIALIZATION_FAILED int = 0x06
+const INVALID_RESOURCE_ID int = 0x07
+const INVALID_APP_FOR_MODEL int = 0x08
+const MISMATCHED_FEATURE_TYPE int = 0x09
+const INVALID_FEEDBACK_LEVEL int = 0x0A
+const MISSING_CREATIVES int = 0x0B
+const TOO_MANY_CREATIVES int = 0x0C
+const MISPLACED_CREATIVE_ID int = 0x0D
+const NO_API_RESPONSE int = 0x0E
+const FORBIDDEN int = 0x0F
+const UNKNOWN_RESOURCE int = 0x10
+const OTHER_FETCH_ERROR int = 0x11
+const INVALID_CLUSTER_DESCRIPTION int = 0x12
+const SCHEMA_UNAVAILABLE int = 0x13
+const INVALID_HANDLE int = 0x14
+const UNAUTHORIZED int = 0x15
+const INTERNAL_API_ERROR int = 0x16
 
 const APP_BID_SHADING int = 0
 const APP_PROBABILITY int = 1
 const APP_LINE_ITEM int = 2
-const APP_UNDEFINED int = 3
+const APP_ACTION_RATE int = 3
+const APP_UNDEFINED int = 9999
