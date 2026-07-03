@@ -11,7 +11,7 @@
 package Ubiquity
 
 /*
-#cgo LDFLAGS: -L. -lubiquityclientwrapper -lubiquity_client_static -lbsd -lcurl -luuid -lstdc++ -lm -ldl
+#cgo LDFLAGS: -L. -lubiquityclientwrapper -lubiquity_client_static -lbsd -lcurl -luuid -lstdc++ -lm -ldl -lssl -lcrypto
 
 #define intgo swig_intgo
 typedef void *swig_voidp;
@@ -33,30 +33,30 @@ typedef long long swig_type_1;
 typedef long long swig_type_2;
 typedef _gostring_ swig_type_3;
 typedef _gostring_ swig_type_4;
-typedef long long swig_type_5;
-typedef _gostring_ swig_type_6;
-typedef _gostring_ swig_type_7;
-typedef long long swig_type_8;
+typedef _gostring_ swig_type_5;
+typedef long long swig_type_6;
+typedef long long swig_type_7;
+typedef _gostring_ swig_type_8;
 typedef _gostring_ swig_type_9;
 typedef long long swig_type_10;
 typedef _gostring_ swig_type_11;
 typedef long long swig_type_12;
 typedef _gostring_ swig_type_13;
-typedef long long swig_type_14;
+typedef _gostring_ swig_type_14;
 typedef _gostring_ swig_type_15;
-typedef long long swig_type_16;
+typedef _gostring_ swig_type_16;
 typedef _gostring_ swig_type_17;
-typedef long long swig_type_18;
+typedef _gostring_ swig_type_18;
 typedef _gostring_ swig_type_19;
 typedef _gostring_ swig_type_20;
-typedef _gostring_ swig_type_21;
+typedef long long swig_type_21;
 typedef _gostring_ swig_type_22;
 typedef _gostring_ swig_type_23;
 typedef _gostring_ swig_type_24;
 typedef _gostring_ swig_type_25;
-typedef _gostring_ swig_type_26;
-typedef long long swig_type_27;
-typedef _gostring_ swig_type_28;
+typedef long long swig_type_26;
+typedef _gostring_ swig_type_27;
+typedef long long swig_type_28;
 extern void _wrap_Swig_free_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern uintptr_t _wrap_Swig_malloc_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
 extern uintptr_t _wrap_new_ClientHandle_Ubiquity_efad76b24322b4d4(void);
@@ -71,30 +71,46 @@ extern swig_intgo _wrap_ClientHandle_getPredictionType_Ubiquity_efad76b24322b4d4
 extern float _wrap_ClientHandle_getProbability_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern char _wrap_ClientHandle_getBidStatus_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern swig_intgo _wrap_ClientHandle_poll_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
-extern swig_intgo _wrap_ClientHandle_predict_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
+extern void _wrap_ClientHandle_idle_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
+extern swig_intgo _wrap_ClientHandle_predict_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_5 arg2, swig_type_6 arg3);
 extern void _wrap_ClientHandle_putBoolean_Ubiquity_efad76b24322b4d4(uintptr_t arg1, char arg2);
 extern void _wrap_ClientHandle_putCategorical_Ubiquity_efad76b24322b4d4(uintptr_t arg1, char arg2);
-extern void _wrap_ClientHandle_putCreative_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_5 arg2);
-extern void _wrap_ClientHandle_putNominal_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_6 arg2);
+extern void _wrap_ClientHandle_putCreative_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_7 arg2);
+extern void _wrap_ClientHandle_putNominal_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_8 arg2);
 extern void _wrap_ClientHandle_putNumeric_Ubiquity_efad76b24322b4d4(uintptr_t arg1, float arg2);
-extern void _wrap_ClientHandle_startBidShading_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_7 arg2, swig_type_8 arg3, float arg4, float arg5);
-extern void _wrap_ClientHandle_startLineItem_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_9 arg2, swig_type_10 arg3, float arg4);
-extern void _wrap_ClientHandle_startActionRate_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_11 arg2, swig_type_12 arg3, float arg4);
-extern void _wrap_ClientHandle_startProbability_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_13 arg2, swig_type_14 arg3);
-extern swig_intgo _wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_15 arg2, swig_type_16 arg3, swig_intgo arg4);
-extern swig_intgo _wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_17 arg2, swig_type_18 arg3);
-extern swig_type_19 _wrap_ClientHandle_getDiagnosticString_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
+extern void _wrap_ClientHandle_startBidShading__SWIG_0_Ubiquity_efad76b24322b4d4(uintptr_t arg1, float arg2, float arg3, swig_intgo arg4);
+extern void _wrap_ClientHandle_startBidShading__SWIG_1_Ubiquity_efad76b24322b4d4(uintptr_t arg1, float arg2, float arg3);
+extern void _wrap_ClientHandle_startLineItem__SWIG_0_Ubiquity_efad76b24322b4d4(uintptr_t arg1, float arg2, float arg3, swig_intgo arg4);
+extern void _wrap_ClientHandle_startLineItem__SWIG_1_Ubiquity_efad76b24322b4d4(uintptr_t arg1, float arg2, float arg3);
+extern void _wrap_ClientHandle_startLineItem__SWIG_2_Ubiquity_efad76b24322b4d4(uintptr_t arg1, float arg2);
+extern void _wrap_ClientHandle_startActionRate__SWIG_0_Ubiquity_efad76b24322b4d4(uintptr_t arg1, float arg2, float arg3, swig_intgo arg4);
+extern void _wrap_ClientHandle_startActionRate__SWIG_1_Ubiquity_efad76b24322b4d4(uintptr_t arg1, float arg2, float arg3);
+extern void _wrap_ClientHandle_startActionRate__SWIG_2_Ubiquity_efad76b24322b4d4(uintptr_t arg1, float arg2);
+extern void _wrap_ClientHandle_startProbability_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
+extern swig_intgo _wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_9 arg2, swig_type_10 arg3, short arg4);
+extern swig_intgo _wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_11 arg2, swig_type_12 arg3);
+extern swig_type_13 _wrap_ClientHandle_getDiagnosticString_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
+extern void _wrap_ClientHandle_setLogLevel_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_intgo arg2);
 extern uintptr_t _wrap_getClientHandle__SWIG_0_Ubiquity_efad76b24322b4d4(void);
 extern void _wrap_delete_ClientHandle_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
-extern swig_type_20 _wrap_getStatusString_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
-extern void _wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(swig_type_21 arg1);
-extern void _wrap_setCredential_Ubiquity_efad76b24322b4d4(swig_type_22 arg1);
-extern void _wrap_setApiAddress_Ubiquity_efad76b24322b4d4(swig_type_23 arg1);
-extern void _wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(swig_type_24 arg1, swig_type_25 arg2);
+extern swig_type_14 _wrap_getStatusString_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
+extern void _wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(swig_type_15 arg1);
+extern void _wrap_setCredentials_Ubiquity_efad76b24322b4d4(swig_type_16 arg1);
+extern void _wrap_setApiAddress_Ubiquity_efad76b24322b4d4(swig_type_17 arg1);
+extern void _wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(swig_type_18 arg1, swig_type_19 arg2);
 extern uintptr_t _wrap_getClientHandle__SWIG_1_Ubiquity_efad76b24322b4d4(void);
-extern swig_intgo _wrap_openClient_Ubiquity_efad76b24322b4d4(swig_type_26 arg1);
+extern swig_intgo _wrap_openClient_Ubiquity_efad76b24322b4d4(swig_type_20 arg1);
 extern void _wrap_closeClient_Ubiquity_efad76b24322b4d4(void);
-extern swig_type_27 _wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(swig_type_28 arg1);
+extern swig_type_21 _wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(swig_type_22 arg1);
+extern void _wrap_setDefaultLogLevel_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
+extern void _wrap_setProtocolLogLevel_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
+extern void _wrap_setLogFileLevel_Ubiquity_efad76b24322b4d4(swig_type_23 arg1, swig_intgo arg2);
+extern void _wrap_setLogFileDailyRotation_Ubiquity_efad76b24322b4d4(swig_type_24 arg1, swig_intgo arg2, swig_intgo arg3);
+extern void _wrap_setLogFileMaxSize_Ubiquity_efad76b24322b4d4(swig_type_25 arg1, swig_type_26 arg2);
+extern void _wrap_setLogFileMaxArchives_Ubiquity_efad76b24322b4d4(swig_type_27 arg1, swig_type_28 arg2);
+extern void _wrap_setStdoutLevel_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
+extern void _wrap_setStderrLevel_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
+extern void _wrap_setSyslogLevel_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
 #undef intgo
 */
 import "C"
@@ -244,10 +260,20 @@ func (arg1 SwigcptrClientHandle) Poll() (_swig_ret int) {
 	return swig_r
 }
 
-func (arg1 SwigcptrClientHandle) Predict() (_swig_ret int) {
+func (arg1 SwigcptrClientHandle) Idle() {
+	_swig_i_0 := arg1
+	C._wrap_ClientHandle_idle_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0))
+}
+
+func (arg1 SwigcptrClientHandle) Predict(arg2 string, arg3 int64) (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
-	swig_r = (int)(C._wrap_ClientHandle_predict_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0)))
+	_swig_i_1 := arg2
+	_swig_i_2 := arg3
+	swig_r = (int)(C._wrap_ClientHandle_predict_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_5)(unsafe.Pointer(&_swig_i_1)), C.swig_type_6(_swig_i_2)))
+	if Swig_escape_always_false {
+		Swig_escape_val = arg2
+	}
 	return swig_r
 }
 
@@ -266,13 +292,13 @@ func (arg1 SwigcptrClientHandle) PutCategorical(arg2 int8) {
 func (arg1 SwigcptrClientHandle) PutCreative(arg2 int64) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_ClientHandle_putCreative_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.swig_type_5(_swig_i_1))
+	C._wrap_ClientHandle_putCreative_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.swig_type_7(_swig_i_1))
 }
 
 func (arg1 SwigcptrClientHandle) PutNominal(arg2 string) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_ClientHandle_putNominal_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_6)(unsafe.Pointer(&_swig_i_1)))
+	C._wrap_ClientHandle_putNominal_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_8)(unsafe.Pointer(&_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -284,57 +310,122 @@ func (arg1 SwigcptrClientHandle) PutNumeric(arg2 float32) {
 	C._wrap_ClientHandle_putNumeric_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.float(_swig_i_1))
 }
 
-func (arg1 SwigcptrClientHandle) StartBidShading(arg2 string, arg3 int64, arg4 float32, arg5 float32) {
+func (arg1 SwigcptrClientHandle) StartBidShading__SWIG_0(arg2 float32, arg3 float32, arg4 int) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
 	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	C._wrap_ClientHandle_startBidShading_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_7)(unsafe.Pointer(&_swig_i_1)), C.swig_type_8(_swig_i_2), C.float(_swig_i_3), C.float(_swig_i_4))
-	if Swig_escape_always_false {
-		Swig_escape_val = arg2
-	}
+	C._wrap_ClientHandle_startBidShading__SWIG_0_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.float(_swig_i_1), C.float(_swig_i_2), C.swig_intgo(_swig_i_3))
 }
 
-func (arg1 SwigcptrClientHandle) StartLineItem(arg2 string, arg3 int64, arg4 float32) {
+func (arg1 SwigcptrClientHandle) StartBidShading__SWIG_1(arg2 float32, arg3 float32) {
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	_swig_i_2 := arg3
+	C._wrap_ClientHandle_startBidShading__SWIG_1_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.float(_swig_i_1), C.float(_swig_i_2))
+}
+
+func (p SwigcptrClientHandle) StartBidShading(a ...interface{}) {
+	argc := len(a)
+	if argc == 2 {
+		p.StartBidShading__SWIG_1(a[0].(float32), a[1].(float32))
+		return
+	}
+	if argc == 3 {
+		p.StartBidShading__SWIG_0(a[0].(float32), a[1].(float32), a[2].(int))
+		return
+	}
+	panic("No match for overloaded function call")
+}
+
+func (arg1 SwigcptrClientHandle) StartLineItem__SWIG_0(arg2 float32, arg3 float32, arg4 int) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
 	_swig_i_3 := arg4
-	C._wrap_ClientHandle_startLineItem_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_9)(unsafe.Pointer(&_swig_i_1)), C.swig_type_10(_swig_i_2), C.float(_swig_i_3))
-	if Swig_escape_always_false {
-		Swig_escape_val = arg2
-	}
+	C._wrap_ClientHandle_startLineItem__SWIG_0_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.float(_swig_i_1), C.float(_swig_i_2), C.swig_intgo(_swig_i_3))
 }
 
-func (arg1 SwigcptrClientHandle) StartActionRate(arg2 string, arg3 int64, arg4 float32) {
+func (arg1 SwigcptrClientHandle) StartLineItem__SWIG_1(arg2 float32, arg3 float32) {
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	_swig_i_2 := arg3
+	C._wrap_ClientHandle_startLineItem__SWIG_1_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.float(_swig_i_1), C.float(_swig_i_2))
+}
+
+func (arg1 SwigcptrClientHandle) StartLineItem__SWIG_2(arg2 float32) {
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	C._wrap_ClientHandle_startLineItem__SWIG_2_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.float(_swig_i_1))
+}
+
+func (p SwigcptrClientHandle) StartLineItem(a ...interface{}) {
+	argc := len(a)
+	if argc == 1 {
+		p.StartLineItem__SWIG_2(a[0].(float32))
+		return
+	}
+	if argc == 2 {
+		p.StartLineItem__SWIG_1(a[0].(float32), a[1].(float32))
+		return
+	}
+	if argc == 3 {
+		p.StartLineItem__SWIG_0(a[0].(float32), a[1].(float32), a[2].(int))
+		return
+	}
+	panic("No match for overloaded function call")
+}
+
+func (arg1 SwigcptrClientHandle) StartActionRate__SWIG_0(arg2 float32, arg3 float32, arg4 int) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
 	_swig_i_3 := arg4
-	C._wrap_ClientHandle_startActionRate_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_1)), C.swig_type_12(_swig_i_2), C.float(_swig_i_3))
-	if Swig_escape_always_false {
-		Swig_escape_val = arg2
-	}
+	C._wrap_ClientHandle_startActionRate__SWIG_0_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.float(_swig_i_1), C.float(_swig_i_2), C.swig_intgo(_swig_i_3))
 }
 
-func (arg1 SwigcptrClientHandle) StartProbability(arg2 string, arg3 int64) {
+func (arg1 SwigcptrClientHandle) StartActionRate__SWIG_1(arg2 float32, arg3 float32) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	C._wrap_ClientHandle_startProbability_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_1)), C.swig_type_14(_swig_i_2))
-	if Swig_escape_always_false {
-		Swig_escape_val = arg2
-	}
+	C._wrap_ClientHandle_startActionRate__SWIG_1_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.float(_swig_i_1), C.float(_swig_i_2))
 }
 
-func (arg1 SwigcptrClientHandle) Train(arg2 string, arg3 int64, arg4 int) (_swig_ret int) {
+func (arg1 SwigcptrClientHandle) StartActionRate__SWIG_2(arg2 float32) {
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	C._wrap_ClientHandle_startActionRate__SWIG_2_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.float(_swig_i_1))
+}
+
+func (p SwigcptrClientHandle) StartActionRate(a ...interface{}) {
+	argc := len(a)
+	if argc == 1 {
+		p.StartActionRate__SWIG_2(a[0].(float32))
+		return
+	}
+	if argc == 2 {
+		p.StartActionRate__SWIG_1(a[0].(float32), a[1].(float32))
+		return
+	}
+	if argc == 3 {
+		p.StartActionRate__SWIG_0(a[0].(float32), a[1].(float32), a[2].(int))
+		return
+	}
+	panic("No match for overloaded function call")
+}
+
+func (arg1 SwigcptrClientHandle) StartProbability() {
+	_swig_i_0 := arg1
+	C._wrap_ClientHandle_startProbability_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0))
+}
+
+func (arg1 SwigcptrClientHandle) Train(arg2 string, arg3 int64, arg4 uint16) (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
 	_swig_i_3 := arg4
-	swig_r = (int)(C._wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_1)), C.swig_type_16(_swig_i_2), C.swig_intgo(_swig_i_3)))
+	swig_r = (int)(C._wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_9)(unsafe.Pointer(&_swig_i_1)), C.swig_type_10(_swig_i_2), C.short(_swig_i_3)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -346,7 +437,7 @@ func (arg1 SwigcptrClientHandle) Cancel(arg2 string, arg3 int64) (_swig_ret int)
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	swig_r = (int)(C._wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_17)(unsafe.Pointer(&_swig_i_1)), C.swig_type_18(_swig_i_2)))
+	swig_r = (int)(C._wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_1)), C.swig_type_12(_swig_i_2)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -361,6 +452,12 @@ func (arg1 SwigcptrClientHandle) GetDiagnosticString() (_swig_ret string) {
 	var swig_r_1 string
  swig_r_1 = swigCopyString(swig_r) 
 	return swig_r_1
+}
+
+func (arg1 SwigcptrClientHandle) SetLogLevel(arg2 int) {
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	C._wrap_ClientHandle_setLogLevel_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1))
 }
 
 func GetClientHandle__SWIG_0() (_swig_ret ClientHandle) {
@@ -388,19 +485,21 @@ type ClientHandle interface {
 	GetProbability() (_swig_ret float32)
 	GetBidStatus() (_swig_ret int8)
 	Poll() (_swig_ret int)
-	Predict() (_swig_ret int)
+	Idle()
+	Predict(arg2 string, arg3 int64) (_swig_ret int)
 	PutBoolean(arg2 int8)
 	PutCategorical(arg2 int8)
 	PutCreative(arg2 int64)
 	PutNominal(arg2 string)
 	PutNumeric(arg2 float32)
-	StartBidShading(arg2 string, arg3 int64, arg4 float32, arg5 float32)
-	StartLineItem(arg2 string, arg3 int64, arg4 float32)
-	StartActionRate(arg2 string, arg3 int64, arg4 float32)
-	StartProbability(arg2 string, arg3 int64)
-	Train(arg2 string, arg3 int64, arg4 int) (_swig_ret int)
+	StartBidShading(a ...interface{})
+	StartLineItem(a ...interface{})
+	StartActionRate(a ...interface{})
+	StartProbability()
+	Train(arg2 string, arg3 int64, arg4 uint16) (_swig_ret int)
 	Cancel(arg2 string, arg3 int64) (_swig_ret int)
 	GetDiagnosticString() (_swig_ret string)
+	SetLogLevel(arg2 int)
 }
 
 func GetStatusString(arg1 int) (_swig_ret string) {
@@ -415,15 +514,15 @@ func GetStatusString(arg1 int) (_swig_ret string) {
 
 func SetAeronDirectory(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(*(*C.swig_type_21)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(*(*C.swig_type_15)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
 }
 
-func SetCredential(arg1 string) {
+func SetCredentials(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setCredential_Ubiquity_efad76b24322b4d4(*(*C.swig_type_22)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setCredentials_Ubiquity_efad76b24322b4d4(*(*C.swig_type_16)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -431,7 +530,7 @@ func SetCredential(arg1 string) {
 
 func SetApiAddress(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setApiAddress_Ubiquity_efad76b24322b4d4(*(*C.swig_type_23)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setApiAddress_Ubiquity_efad76b24322b4d4(*(*C.swig_type_17)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -440,7 +539,7 @@ func SetApiAddress(arg1 string) {
 func SetResourceStringInCache(arg1 string, arg2 string) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(*(*C.swig_type_24)(unsafe.Pointer(&_swig_i_0)), *(*C.swig_type_25)(unsafe.Pointer(&_swig_i_1)))
+	C._wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(*(*C.swig_type_18)(unsafe.Pointer(&_swig_i_0)), *(*C.swig_type_19)(unsafe.Pointer(&_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -469,7 +568,7 @@ func GetClientHandle(a ...interface{}) ClientHandle {
 func OpenClient(arg1 string) (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
-	swig_r = (int)(C._wrap_openClient_Ubiquity_efad76b24322b4d4(*(*C.swig_type_26)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (int)(C._wrap_openClient_Ubiquity_efad76b24322b4d4(*(*C.swig_type_20)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -483,13 +582,74 @@ func CloseClient() {
 func Xxh3_64bits(arg1 string) (_swig_ret int64) {
 	var swig_r int64
 	_swig_i_0 := arg1
-	swig_r = (int64)(C._wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(*(*C.swig_type_28)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (int64)(C._wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(*(*C.swig_type_22)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
 	return swig_r
 }
 
+func SetDefaultLogLevel(arg1 int) {
+	_swig_i_0 := arg1
+	C._wrap_setDefaultLogLevel_Ubiquity_efad76b24322b4d4(C.swig_intgo(_swig_i_0))
+}
+
+func SetProtocolLogLevel(arg1 int) {
+	_swig_i_0 := arg1
+	C._wrap_setProtocolLogLevel_Ubiquity_efad76b24322b4d4(C.swig_intgo(_swig_i_0))
+}
+
+func SetLogFileLevel(arg1 string, arg2 int) {
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	C._wrap_setLogFileLevel_Ubiquity_efad76b24322b4d4(*(*C.swig_type_23)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1))
+	if Swig_escape_always_false {
+		Swig_escape_val = arg1
+	}
+}
+
+func SetLogFileDailyRotation(arg1 string, arg2 int, arg3 int) {
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	_swig_i_2 := arg3
+	C._wrap_setLogFileDailyRotation_Ubiquity_efad76b24322b4d4(*(*C.swig_type_24)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2))
+	if Swig_escape_always_false {
+		Swig_escape_val = arg1
+	}
+}
+
+func SetLogFileMaxSize(arg1 string, arg2 int64) {
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	C._wrap_setLogFileMaxSize_Ubiquity_efad76b24322b4d4(*(*C.swig_type_25)(unsafe.Pointer(&_swig_i_0)), C.swig_type_26(_swig_i_1))
+	if Swig_escape_always_false {
+		Swig_escape_val = arg1
+	}
+}
+
+func SetLogFileMaxArchives(arg1 string, arg2 int64) {
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	C._wrap_setLogFileMaxArchives_Ubiquity_efad76b24322b4d4(*(*C.swig_type_27)(unsafe.Pointer(&_swig_i_0)), C.swig_type_28(_swig_i_1))
+	if Swig_escape_always_false {
+		Swig_escape_val = arg1
+	}
+}
+
+func SetStdoutLevel(arg1 int) {
+	_swig_i_0 := arg1
+	C._wrap_setStdoutLevel_Ubiquity_efad76b24322b4d4(C.swig_intgo(_swig_i_0))
+}
+
+func SetStderrLevel(arg1 int) {
+	_swig_i_0 := arg1
+	C._wrap_setStderrLevel_Ubiquity_efad76b24322b4d4(C.swig_intgo(_swig_i_0))
+}
+
+func SetSyslogLevel(arg1 int) {
+	_swig_i_0 := arg1
+	C._wrap_setSyslogLevel_Ubiquity_efad76b24322b4d4(C.swig_intgo(_swig_i_0))
+}
 
 
 const MISSING_BOOLEAN int8 = -1
@@ -508,6 +668,9 @@ const NO_COMPATIBLE_NODE int = 4
 const NO_BID int8 = 0
 const BID int8 = 1
 
+const WIN_RATE_PRESERVATION = 0
+const EXPECTED_SURPLUS_MAXIMIZATION = 1
+
 const ARCHITECTURE_NOT_SUPPORTED int = 0x05
 const AERON_INITIALIZATION_FAILED int = 0x06
 const INVALID_RESOURCE_ID int = 0x07
@@ -517,18 +680,43 @@ const INVALID_FEEDBACK_LEVEL int = 0x0A
 const MISSING_CREATIVES int = 0x0B
 const TOO_MANY_CREATIVES int = 0x0C
 const MISPLACED_CREATIVE_ID int = 0x0D
+
 const NO_API_RESPONSE int = 0x0E
 const FORBIDDEN int = 0x0F
 const UNKNOWN_RESOURCE int = 0x10
 const OTHER_FETCH_ERROR int = 0x11
 const INVALID_CLUSTER_DESCRIPTION int = 0x12
-const SCHEMA_UNAVAILABLE int = 0x13
+const NO_MODEL_METADATA int = 0x13
 const INVALID_HANDLE int = 0x14
 const UNAUTHORIZED int = 0x15
 const INTERNAL_API_ERROR int = 0x16
+const OUT_OF_MEMORY int = 0x17
 
 const APP_BID_SHADING int = 0
 const APP_PROBABILITY int = 1
 const APP_LINE_ITEM int = 2
 const APP_ACTION_RATE int = 3
 const APP_UNDEFINED int = 9999
+
+const LOG_OFF int = 0
+
+const LOG_TRACE int = 0x01
+const LOG_DEBUG int = 0x02
+const LOG_INFO int = 0x04
+const LOG_WARNING int = 0x08
+const LOG_ERROR int = 0x10
+const LOG_CRITICAL int = 0x20
+
+const MIN_LOG_TRACE int = 0x3f
+const MIN_LOG_DEBUG int = 0x3e
+const MIN_LOG_INFO int = 0x3c
+const MIN_LOG_WARNING int = 0x38
+const MIN_LOG_ERROR int = 0x30
+const MIN_LOG_CRITICAL int = 0x20
+
+const MAX_LOG_TRACE int = 0x01
+const MAX_LOG_DEBUG int = 0x03
+const MAX_LOG_INFO int = 0x07
+const MAX_LOG_WARNING int = 0x0f
+const MAX_LOG_ERROR int = 0x1f
+const MAX_LOG_CRITICAL int = 0x3f
