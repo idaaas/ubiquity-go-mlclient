@@ -41,8 +41,8 @@ typedef _gostring_ swig_type_9;
 typedef _gostring_ swig_type_10;
 typedef long long swig_type_11;
 typedef _gostring_ swig_type_12;
-typedef long long swig_type_13;
-typedef _gostring_ swig_type_14;
+typedef _gostring_ swig_type_13;
+typedef long long swig_type_14;
 typedef _gostring_ swig_type_15;
 typedef _gostring_ swig_type_16;
 typedef _gostring_ swig_type_17;
@@ -50,14 +50,15 @@ typedef _gostring_ swig_type_18;
 typedef _gostring_ swig_type_19;
 typedef _gostring_ swig_type_20;
 typedef _gostring_ swig_type_21;
-typedef long long swig_type_22;
-typedef _gostring_ swig_type_23;
+typedef _gostring_ swig_type_22;
+typedef long long swig_type_23;
 typedef _gostring_ swig_type_24;
 typedef _gostring_ swig_type_25;
 typedef _gostring_ swig_type_26;
-typedef long long swig_type_27;
-typedef _gostring_ swig_type_28;
-typedef long long swig_type_29;
+typedef _gostring_ swig_type_27;
+typedef long long swig_type_28;
+typedef _gostring_ swig_type_29;
+typedef long long swig_type_30;
 extern void _wrap_Swig_free_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern uintptr_t _wrap_Swig_malloc_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
 extern uintptr_t _wrap_new_ClientHandle_Ubiquity_efad76b24322b4d4(void);
@@ -94,27 +95,27 @@ extern void _wrap_ClientHandle_startProbability_Ubiquity_efad76b24322b4d4(uintpt
 extern void _wrap_ClientHandle_startBinaryClassification_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern void _wrap_ClientHandle_startRegression_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern void _wrap_ClientHandle_startTrafficShaping_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
-extern swig_intgo _wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_10 arg2, swig_type_11 arg3, short arg4);
-extern swig_intgo _wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_12 arg2, swig_type_13 arg3);
-extern swig_type_14 _wrap_ClientHandle_getDiagnosticString_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
+extern swig_intgo _wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_10 arg2, swig_type_11 arg3, swig_type_12 arg4);
+extern swig_intgo _wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_type_13 arg2, swig_type_14 arg3);
+extern swig_type_15 _wrap_ClientHandle_getDiagnosticString_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
 extern void _wrap_ClientHandle_setLogLevel_Ubiquity_efad76b24322b4d4(uintptr_t arg1, swig_intgo arg2);
 extern uintptr_t _wrap_getClientHandle__SWIG_0_Ubiquity_efad76b24322b4d4(void);
 extern void _wrap_delete_ClientHandle_Ubiquity_efad76b24322b4d4(uintptr_t arg1);
-extern swig_type_15 _wrap_getStatusString_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
-extern void _wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(swig_type_16 arg1);
-extern void _wrap_setCredentials_Ubiquity_efad76b24322b4d4(swig_type_17 arg1);
-extern void _wrap_setApiAddress_Ubiquity_efad76b24322b4d4(swig_type_18 arg1);
-extern void _wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(swig_type_19 arg1, swig_type_20 arg2);
+extern swig_type_16 _wrap_getStatusString_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
+extern void _wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(swig_type_17 arg1);
+extern void _wrap_setCredentials_Ubiquity_efad76b24322b4d4(swig_type_18 arg1);
+extern void _wrap_setApiAddress_Ubiquity_efad76b24322b4d4(swig_type_19 arg1);
+extern void _wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(swig_type_20 arg1, swig_type_21 arg2);
 extern uintptr_t _wrap_getClientHandle__SWIG_1_Ubiquity_efad76b24322b4d4(void);
-extern swig_intgo _wrap_openClient_Ubiquity_efad76b24322b4d4(swig_type_21 arg1);
+extern swig_intgo _wrap_openClient_Ubiquity_efad76b24322b4d4(swig_type_22 arg1);
 extern void _wrap_closeClient_Ubiquity_efad76b24322b4d4(void);
-extern swig_type_22 _wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(swig_type_23 arg1);
+extern swig_type_23 _wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(swig_type_24 arg1);
 extern void _wrap_setDefaultLogLevel_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
 extern void _wrap_setProtocolLogLevel_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
-extern void _wrap_setLogFileLevel_Ubiquity_efad76b24322b4d4(swig_type_24 arg1, swig_intgo arg2);
-extern void _wrap_setLogFileDailyRotation_Ubiquity_efad76b24322b4d4(swig_type_25 arg1, swig_intgo arg2, swig_intgo arg3);
-extern void _wrap_setLogFileMaxSize_Ubiquity_efad76b24322b4d4(swig_type_26 arg1, swig_type_27 arg2);
-extern void _wrap_setLogFileMaxArchives_Ubiquity_efad76b24322b4d4(swig_type_28 arg1, swig_type_29 arg2);
+extern void _wrap_setLogFileLevel_Ubiquity_efad76b24322b4d4(swig_type_25 arg1, swig_intgo arg2);
+extern void _wrap_setLogFileDailyRotation_Ubiquity_efad76b24322b4d4(swig_type_26 arg1, swig_intgo arg2, swig_intgo arg3);
+extern void _wrap_setLogFileMaxSize_Ubiquity_efad76b24322b4d4(swig_type_27 arg1, swig_type_28 arg2);
+extern void _wrap_setLogFileMaxArchives_Ubiquity_efad76b24322b4d4(swig_type_29 arg1, swig_type_30 arg2);
 extern void _wrap_setStdoutLevel_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
 extern void _wrap_setStderrLevel_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
 extern void _wrap_setSyslogLevel_Ubiquity_efad76b24322b4d4(swig_intgo arg1);
@@ -462,15 +463,18 @@ func (arg1 SwigcptrClientHandle) StartTrafficShaping() {
 	C._wrap_ClientHandle_startTrafficShaping_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0))
 }
 
-func (arg1 SwigcptrClientHandle) Train(arg2 string, arg3 int64, arg4 uint16) (_swig_ret int) {
+func (arg1 SwigcptrClientHandle) Train(arg2 string, arg3 int64, arg4 string) (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
 	_swig_i_3 := arg4
-	swig_r = (int)(C._wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_10)(unsafe.Pointer(&_swig_i_1)), C.swig_type_11(_swig_i_2), C.short(_swig_i_3)))
+	swig_r = (int)(C._wrap_ClientHandle_train_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_10)(unsafe.Pointer(&_swig_i_1)), C.swig_type_11(_swig_i_2), *(*C.swig_type_12)(unsafe.Pointer(&_swig_i_3))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
+	}
+	if Swig_escape_always_false {
+		Swig_escape_val = arg4
 	}
 	return swig_r
 }
@@ -480,7 +484,7 @@ func (arg1 SwigcptrClientHandle) Cancel(arg2 string, arg3 int64) (_swig_ret int)
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	swig_r = (int)(C._wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_12)(unsafe.Pointer(&_swig_i_1)), C.swig_type_13(_swig_i_2)))
+	swig_r = (int)(C._wrap_ClientHandle_cancel_Ubiquity_efad76b24322b4d4(C.uintptr_t(_swig_i_0), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_1)), C.swig_type_14(_swig_i_2)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -545,7 +549,7 @@ type ClientHandle interface {
 	StartBinaryClassification()
 	StartRegression()
 	StartTrafficShaping()
-	Train(arg2 string, arg3 int64, arg4 uint16) (_swig_ret int)
+	Train(arg2 string, arg3 int64, arg4 string) (_swig_ret int)
 	Cancel(arg2 string, arg3 int64) (_swig_ret int)
 	GetDiagnosticString() (_swig_ret string)
 	SetLogLevel(arg2 int)
@@ -563,7 +567,7 @@ func GetStatusString(arg1 int) (_swig_ret string) {
 
 func SetAeronDirectory(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(*(*C.swig_type_16)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setAeronDirectory_Ubiquity_efad76b24322b4d4(*(*C.swig_type_17)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -571,7 +575,7 @@ func SetAeronDirectory(arg1 string) {
 
 func SetCredentials(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setCredentials_Ubiquity_efad76b24322b4d4(*(*C.swig_type_17)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setCredentials_Ubiquity_efad76b24322b4d4(*(*C.swig_type_18)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -579,7 +583,7 @@ func SetCredentials(arg1 string) {
 
 func SetApiAddress(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_setApiAddress_Ubiquity_efad76b24322b4d4(*(*C.swig_type_18)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_setApiAddress_Ubiquity_efad76b24322b4d4(*(*C.swig_type_19)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -588,7 +592,7 @@ func SetApiAddress(arg1 string) {
 func SetResourceStringInCache(arg1 string, arg2 string) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(*(*C.swig_type_19)(unsafe.Pointer(&_swig_i_0)), *(*C.swig_type_20)(unsafe.Pointer(&_swig_i_1)))
+	C._wrap_setResourceStringInCache_Ubiquity_efad76b24322b4d4(*(*C.swig_type_20)(unsafe.Pointer(&_swig_i_0)), *(*C.swig_type_21)(unsafe.Pointer(&_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -617,7 +621,7 @@ func GetClientHandle(a ...interface{}) ClientHandle {
 func OpenClient(arg1 string) (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
-	swig_r = (int)(C._wrap_openClient_Ubiquity_efad76b24322b4d4(*(*C.swig_type_21)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (int)(C._wrap_openClient_Ubiquity_efad76b24322b4d4(*(*C.swig_type_22)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -631,7 +635,7 @@ func CloseClient() {
 func Xxh3_64bits(arg1 string) (_swig_ret int64) {
 	var swig_r int64
 	_swig_i_0 := arg1
-	swig_r = (int64)(C._wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(*(*C.swig_type_23)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (int64)(C._wrap_xxh3_64bits_Ubiquity_efad76b24322b4d4(*(*C.swig_type_24)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -651,7 +655,7 @@ func SetProtocolLogLevel(arg1 int) {
 func SetLogFileLevel(arg1 string, arg2 int) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_setLogFileLevel_Ubiquity_efad76b24322b4d4(*(*C.swig_type_24)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1))
+	C._wrap_setLogFileLevel_Ubiquity_efad76b24322b4d4(*(*C.swig_type_25)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -661,7 +665,7 @@ func SetLogFileDailyRotation(arg1 string, arg2 int, arg3 int) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	C._wrap_setLogFileDailyRotation_Ubiquity_efad76b24322b4d4(*(*C.swig_type_25)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2))
+	C._wrap_setLogFileDailyRotation_Ubiquity_efad76b24322b4d4(*(*C.swig_type_26)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -670,7 +674,7 @@ func SetLogFileDailyRotation(arg1 string, arg2 int, arg3 int) {
 func SetLogFileMaxSize(arg1 string, arg2 int64) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_setLogFileMaxSize_Ubiquity_efad76b24322b4d4(*(*C.swig_type_26)(unsafe.Pointer(&_swig_i_0)), C.swig_type_27(_swig_i_1))
+	C._wrap_setLogFileMaxSize_Ubiquity_efad76b24322b4d4(*(*C.swig_type_27)(unsafe.Pointer(&_swig_i_0)), C.swig_type_28(_swig_i_1))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -679,7 +683,7 @@ func SetLogFileMaxSize(arg1 string, arg2 int64) {
 func SetLogFileMaxArchives(arg1 string, arg2 int64) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_setLogFileMaxArchives_Ubiquity_efad76b24322b4d4(*(*C.swig_type_28)(unsafe.Pointer(&_swig_i_0)), C.swig_type_29(_swig_i_1))
+	C._wrap_setLogFileMaxArchives_Ubiquity_efad76b24322b4d4(*(*C.swig_type_29)(unsafe.Pointer(&_swig_i_0)), C.swig_type_30(_swig_i_1))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
